@@ -1,0 +1,18 @@
+[package]
+name = "azul-dll"
+version = "0.1.0"
+authors = ["fschutt <felix.schuett@maps4print.com>"]
+edition = "2018"
+
+[[bin]]
+name = "azul-dll" # the BINARY should be called azul-dll
+edition = "2018"
+path = "src/main.rs"
+
+[lib]
+name = "azul"  # but the LIBRARY should be called "azul.dll"
+edition = "2018"
+crate-type = ["cdylib"] # generate C DLL
+doc = false
+
+[dependencies]
