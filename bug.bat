@@ -5,7 +5,7 @@ cargo build --release
 cd ..
 
 rem BUGFIX for issue / workaround:
-rem copy "%~dp0\target\release\azul.dll.lib" "%~dp0\target\release\azul.lib"
+copy "%~dp0\target\release\azul.dll.lib" "%~dp0\target\release\azul.lib"
 
 cargo build --release --example bug
 

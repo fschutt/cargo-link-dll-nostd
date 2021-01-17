@@ -8,6 +8,9 @@ links = "azul"
 
 [dependencies]
 
+[dev-dependencies]
+libc_alloc = "*"
+
 [[example]]
 name = "bug"
 path = "../examples/bug.rs"
