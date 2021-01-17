@@ -1,12 +1,12 @@
 cargo clean
 
 cd %~dp0\azul-dll
-cargo build --release
+cargo +nightly build --release
 cd ..
 
 rem BUGFIX for issue / workaround:
 copy "%~dp0\target\release\azul.dll.lib" "%~dp0\target\release\azul.lib"
 
-cargo build --release --example bug
+cargo +nightly build --release --example bug
 
 pause > nul
